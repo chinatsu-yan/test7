@@ -12,4 +12,22 @@
         android:padding="16dp"
         android:gravity="top|start"/>
 
+    <TextView
+        android:id="@+id/smoke_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:gravity="top|start"/>
+
+    <TextView
+        android:id="@+id/fire_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:gravity="top|start"/>
+
 </LinearLayout>
