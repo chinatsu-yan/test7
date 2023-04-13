@@ -51,9 +51,9 @@ class TCPServer(private val port: Int) {
                             println("Received from ${client.inetAddress.hostAddress}:${client.port}: $line")
                             // 在主线程中更新 UI，显示接收到的消息
                             when (line) {
-                                "UP", "DOWN", "STOP" -> receiveTextView?.text = line
-                                "SMOKE" -> smokeTextView?.text = "SMOKE"
-                                "FIRE" -> fireTextView?.text = "FIRE"
+                                "UP", "DOWN", "STOP" -> receiveTextView?.text = "加速度：+ $line"
+                                "SMOKE" -> smokeTextView?.text = "烟雾：SMOKE"
+                                "FIRE" -> fireTextView?.text = "火焰：FIRE"
                             }
 
 
