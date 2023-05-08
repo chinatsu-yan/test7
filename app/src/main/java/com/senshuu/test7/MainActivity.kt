@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var receiveTextView: TextView
     private lateinit var smokeTextView: TextView
     private lateinit var fireTextView: TextView
+    private lateinit var errorTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         receiveTextView = findViewById(R.id.receive_text_view)
         smokeTextView = findViewById(R.id.smoke_text_view)
         fireTextView = findViewById(R.id.fire_text_view)
+        errorTextView = findViewById(R.id.error)
 
 
         // 初始化 TCPServer 对象

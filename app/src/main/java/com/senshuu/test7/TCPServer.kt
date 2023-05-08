@@ -25,6 +25,7 @@ class TCPServer(private val port: Int) {
     var receiveTextView: TextView? = null
     var smokeTextView: TextView? = null
     var fireTextView: TextView? = null
+    var errorTextView: TextView? = null
 
     // 定义 start 函数，用于启动服务器
     fun start() {
@@ -55,6 +56,10 @@ class TCPServer(private val port: Int) {
                                 "SMOKE" -> smokeTextView?.text = "烟雾：SMOKE"
                                 "FIRE" -> fireTextView?.text = "火焰：FIRE"
                             }
+                            if (!smokeTextView?.text.isNullOrEmpty() || !fireTextView?.text.isNullOrEmpty()) {
+                                errorTextView?.text = "警报！"
+                            }
+
 
 
                         }

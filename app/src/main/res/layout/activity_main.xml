@@ -1,36 +1,64 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/transparent">
 
-    <TextView
-        android:id="@+id/receive_text_view"
+    <ImageView
+        android:id="@+id/background_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:padding="16dp"
-        android:text="运行状态："
-        android:gravity="top|start"/>
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:alpha="0.8"/>
 
-    <TextView
-        android:id="@+id/smoke_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:padding="16dp"
-        android:text="烟雾："
-        android:gravity="top|start"/>
+        android:layout_height="400dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/fire_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:padding="16dp"
-        android:text="火焰："
-        android:gravity="top|start"/>
+        <TextView
+            android:id="@+id/receive_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:padding="16dp"
+            android:text="运行状态：UP"
+            android:textColor="#000000"
+            android:textSize="18sp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/smoke_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:padding="16dp"
+            android:text="烟雾："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fire_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:padding="16dp"
+            android:text="火焰："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:padding="20dp"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="96sp" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
